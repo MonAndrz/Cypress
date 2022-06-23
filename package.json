@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "merge:reports": "mochawesome-merge mochawesome-report/*.json>combined-report.json",
+    "create:html:report": "npm run merge:reports && marge --reportDir reportHtml combined-report.json"
+  },
+  "devDependencies": {
+    "cypress": "^9.6.0",
+    "cypress-grep": "^2.14.0",
+    "mocha": "^10.0.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.2.0"
+  }
+}

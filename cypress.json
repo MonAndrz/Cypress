@@ -1,0 +1,17 @@
+{
+    "baseUrl": "https://www.infraredheat.pl",
+    "retries": 2,
+    "env":{
+        "lang": "PL"
+    },
+	"projectId": "its1ue",
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "reportFilename": "[status]_[datetime]-[name]-report",
+        "timestamp": "isoDateTime",
+        "overwrite": false,
+        "html": true,
+        "json": true
+    },
+    "chromeWebSecurity": false
+}
