@@ -6,6 +6,7 @@ describe('Infrared Test', () => {
     beforeEach('Enter infararedheat page', () => {
         cy.clearLocalStorageCache();
         cy.visit('/');
+        cy.viewport(1920, 1080);
         cy.url().should('contain', 'infraredheat.pl');
     });
     it('Go to InfraredHeat with logo', { tags: ['navigation'] },  () => {
@@ -59,11 +60,11 @@ describe('Infrared Test', () => {
     it('Go to Nasze realizacje and check gallery', { tags: ['photosGallery'] }, () => {
         cy.get('#menu-item-1184 > a').click();
         cy.scrollTo('center');
-        cy.get('.n2-ss-slide-414').should('be.visible');
-        cy.get('.n2-ss-slide-415').should('not.be.visible');
-        cy.get('#n2-ss-16-arrow-next > .n2-ow').click();
-        cy.get('.n2-ss-slide-414').should('not.be.visible');
-        cy.get('.n2-ss-slide-415').should('be.visible');
+        cy.get('.n2-ss-slide-315').should('be.visible');
+        cy.get('.n2-ss-slide-331').should('not.be.visible');
+        cy.get('#n2-ss-13-arrow-next > .n2-ow').click();
+        cy.get('.n2-ss-slide-315').should('not.be.visible');
+        cy.get('.n2-ss-slide-331').should('be.visible');
     })
     it('Enter in Zalety folii grzewczych', { tags: ['navigation'] }, () => {
         cy.get('#menu-item-1186 > a').click();

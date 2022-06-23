@@ -1,8 +1,8 @@
 -- Uruchamia wszystkie testy
-npx cypress run
+npx cypress run --headed
 
 -- Uruchamia tylko testy z tagiem 'forms'
-npx cypress run --env grepTags=forms
+npx cypress run --headed --env grepTags=forms
 
 -- Uruchamia tylko testy z tagiem 'forms' i wysyla wyniki testow do Dashboard
-npx cypress run --env grepTags=forms --record --key 807ad5f0-3037-45ce-88a4-59b18a33e4b3
+npx cypress run --headed --env grepTags=forms --record --key 807ad5f0-3037-45ce-88a4-59b18a33e4b3
